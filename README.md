@@ -1,4 +1,4 @@
-# 황여진
+# https://javascript-calendar.herokuapp.com/
 
 ## 캘린더 앱 실행 (웹서버로 구동)
 ```
@@ -8,7 +8,7 @@
 > 크롬 브라우저에서 localhost:8080으로 접속
 ```
 
-# 달력
+## 달력
 ```
 > 월간 달력
 > 주간 달력
