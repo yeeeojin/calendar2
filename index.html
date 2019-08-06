@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>캘린더 만들기</title>
+
+    <script src="js/event.js"></script>
+    <script src="js/utils/util.js"></script>
+
+    <script src="js/model/SingletonDateModel.js"></script>
+
+    <script src="views/Day.js"></script>
+    <script src="views/Week.js"></script>
+    <script src="views/Month.js"></script>
+    <script src="views/MenuToolBar.js"></script>
+
+    <script src="start.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+  </head>
+  <body id="body">
+    <div id="app"></div>
+    <div id="popup" class="layer-wrap">
+      <div class="popup-layer">
+        <div class="popup">
+          <div id="header" class="popup-header">
+            <h3><span id="popupHeaderText">일정추가</span></h3>
+            <button id="popupCancel">X</button>
+          </div>
+          <div id="body" class="popup-body">
+            <div class="popup-row" nav-id="title">
+              <label>제목</label>
+              <input type="text" id="scheduleTitle" placeholder="일정 제목">
+            </div>
+            <div class="popup-row date" nav-id="sDate">
+              <label>시작일시</label>
+              <!-- "2019.01.01 12:00" -->
+              <input type="date" id="scheduleStartDate">
+              <input type="time" id="selectStartTime" name="selectStartTime">
+            </div>
+            <div class="popup-row date" nav-id="eDate">
+              <label>종료일시</label>
+              <!-- "2019.01.01 12:00" -->
+              <input type="date" id="scheduleEndDate">
+              <input type="time" id="selectEndTime" name="selectEndTime">
+            </div>
+            <div class="popup-row" nav-id="memo">
+              <label>메모</label>
+              <textarea name="memo" id="scheduleMemo" cols="30" rows="10" placeholder="메모 영역입니다."></textarea>
+            </div>
+          </div>
+          <div id="footerNew" class="popup-footer">
+            <button id="popupSave">저장</button>
+          </div>
+          <div id="footerExist" class="popup-footer">
+            <button id="popupDelete">삭제</button>
+            <button id="popupUpdate">수정</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

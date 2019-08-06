@@ -1,0 +1,14 @@
+{
+  "name": "javascript-calendar",
+  "version": "1.0.0",
+  "description": "```\r > calendar.zip 파일 압축 풀기\r > index.html 파일을 크롬 웹브라우저에서 실행 또는 더블 클릭하여 파일 열기\r ```",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
